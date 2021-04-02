@@ -42,12 +42,12 @@
         "NSLocationWhenInUseUsageDescription": "This app lists art objects based on your current location and helps you navigate around the city to find public art objects near you."
       },
       "bundleIdentifier": "com.flano.flano-app",
-      "buildNumber": "1.2.1",
+      "buildNumber": "1.2.2",
       "icon": "./assets/flano_icon_large_logo.png"
     },
     "android": {
       "package": "com.flano.flanoapp",
-      "versionCode": 3,
+      "versionCode": 4,
       "config": {
         "googleMaps": {
         }
@@ -55,10 +55,7 @@
       "icon": "./assets/flano_icon_small-logo.png",
       "permissions": [
         "ACCESS_COARSE_LOCATION",
-        "ACCESS_FINE_LOCATION",
-        "ACCESS_BACKGROUND_LOCATION",
-        "READ_EXTERNAL_STORAGE",
-        "WRITE_EXTERNAL_STORAGE"
+        "ACCESS_FINE_LOCATION"
       ]
     }
   }
