@@ -1,0 +1,65 @@
+{
+  "expo": {
+    "name": "Flano",
+    "description": "With Flano you can explore and share public art all around your city!",
+    "slug": "flano-app",
+    "version": "1.0.0",
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "orientation": "portrait",
+    "icon": "./assets/flano_icon_small-logo.png",
+    "splash": {
+      "image": "./assets/flano_splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#f9f3ea"
+    },
+    "privacy": "unlisted",
+    "scheme": "flano",
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "primaryColor": "#FF8349",
+    "androidStatusBar": {
+      "barStyle": "dark-content",
+      "translucent": true
+    },
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "LSApplicationQueriesSchemes": [
+          "comgooglemaps",
+          "citymapper",
+          "uber",
+          "yandexnavi",
+          "yandexmaps",
+          "kakaomap"
+        ],
+        "NSLocationWhenInUseUsageDescription": "This app lists art objects based on your current location and helps you navigate around the city to find public art objects near you."
+      },
+      "bundleIdentifier": "com.flano.flano-app",
+      "buildNumber": "1.2.1",
+      "icon": "./assets/flano_icon_large_logo.png"
+    },
+    "android": {
+      "package": "com.flano.flanoapp",
+      "versionCode": 3,
+      "config": {
+        "googleMaps": {
+        }
+      },
+      "icon": "./assets/flano_icon_small-logo.png",
+      "permissions": [
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_BACKGROUND_LOCATION",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE"
+      ]
+    }
+  }
+}
