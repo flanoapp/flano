@@ -29,7 +29,7 @@
       "translucent": true
     },
     "ios": {
-      "supportsTablet": true,
+      "supportsTablet": false,
       "infoPlist": {
         "LSApplicationQueriesSchemes": [
           "comgooglemaps",
@@ -42,7 +42,7 @@
         "NSLocationWhenInUseUsageDescription": "This app lists art objects based on your current location and helps you navigate around the city to find public art objects near you."
       },
       "bundleIdentifier": "com.flano.flano-app",
-      "buildNumber": "1.2.2",
+      "buildNumber": "1.2.3",
       "icon": "./assets/flano_icon_large_logo.png"
     },
     "android": {
