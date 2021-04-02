@@ -8,6 +8,7 @@
       "ios",
       "android"
     ],
+    "githubUrl": "https://github.com/flanoapp/flano",
     "orientation": "portrait",
     "icon": "./assets/flano_icon_small-logo.png",
     "splash": {
