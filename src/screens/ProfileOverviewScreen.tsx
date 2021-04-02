@@ -48,13 +48,13 @@ const ProfileOverviewScreen = ({ navigation }) => {
                 {
                     title: t('profile_about'),
                     icon: 'information',
-                    onPress: () => openBrowser('https://flano.at/about'),
+                    onPress: () => openBrowser('https://flano.at/impressum_app.html'),
                     about: true,
                 },
                 {
                     title: t('profile_privacy'),
                     icon: 'shield',
-                    onPress: () => openBrowser('https://flano.at/privacy'),
+                    onPress: () => openBrowser('https://flano.at/datenschutz_app.html'),
                     about: true,
                 },
                 {
