@@ -50,6 +50,7 @@
       "versionCode": 6,
       "config": {
         "googleMaps": {
+          "apiKey": "GOOGLE_MAPS_API_KEY"
         }
       },
       "icon": "./assets/flano_icon_small-logo.png",

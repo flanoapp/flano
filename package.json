@@ -1,6 +1,8 @@
 {
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
+    "build": "./build.sh",
+    "cleanup": "rm app.json & mv app2.json app.json",
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
