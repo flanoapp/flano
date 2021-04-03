@@ -23,7 +23,7 @@
     "assetBundlePatterns": [
       "**/*"
     ],
-    "primaryColor": "#FF8349",
+    "primaryColor": "#f9f3ea",
     "androidStatusBar": {
       "barStyle": "dark-content",
       "translucent": true
@@ -47,7 +47,7 @@
     },
     "android": {
       "package": "com.flano.flanoapp",
-      "versionCode": 4,
+      "versionCode": 6,
       "config": {
         "googleMaps": {
         }
