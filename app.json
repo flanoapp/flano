@@ -24,7 +24,7 @@
     "assetBundlePatterns": [
       "**/*"
     ],
-    "primaryColor": "#FF8349",
+    "primaryColor": "#f9f3ea",
     "androidStatusBar": {
       "barStyle": "dark-content",
       "translucent": true
@@ -48,9 +48,10 @@
     },
     "android": {
       "package": "com.flano.flanoapp",
-      "versionCode": 4,
+      "versionCode": 6,
       "config": {
         "googleMaps": {
+          "apiKey": "GOOGLE_MAPS_API_KEY"
         }
       },
       "icon": "./assets/flano_icon_small-logo.png",
