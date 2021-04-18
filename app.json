@@ -3,7 +3,7 @@
     "name": "Flano",
     "description": "With Flano you can explore and share public art all around your city!",
     "slug": "flano-app",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "platforms": [
       "ios",
       "android"
@@ -48,11 +48,15 @@
     },
     "android": {
       "package": "com.flano.flanoapp",
-      "versionCode": 6,
+      "versionCode": 7,
       "config": {
         "googleMaps": {
           "apiKey": "GOOGLE_MAPS_API_KEY"
         }
+      },
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#f9f3ea"
       },
       "icon": "./assets/flano_icon_small-logo.png",
       "permissions": [
