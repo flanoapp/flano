@@ -291,9 +291,9 @@ const Map = forwardRef((props: IMapProps, ref) => {
                         size: 30,
                         color: PRIMARY_COLOR,
                     }}
-                    onPress={() => {
-                        checkLocationPermission();
-                        getCurrentUserLocation((region: Region) => {
+                    onPress={async () => {
+                        await checkLocationPermission();
+                        await getCurrentUserLocation((region: Region) => {
                             setRegion(region);
                             focuserPressed.current = true;
                             setLocationFocused(true);
