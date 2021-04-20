@@ -39,6 +39,7 @@ export default () => {
             const { status } = await requestPermissionsAsync();
             if (status !== 'granted') {
                 setCurrentLocation(defaultLocation);
+                //TODO: show alert to inform user that location service is disabled
                 if (callback) {
                     callback({
                         ...defaultLocation,
@@ -67,9 +68,16 @@ export default () => {
                         });
                     }
                 },
-
                 error => {
                     console.log(error.message);
+                    //TODO: show alert to inform user that location services are disabled
+                    if (callback) {
+                        callback({
+                            ...defaultLocation,
+                            longitudeDelta: LONGITUDE_DELTA,
+                            latitudeDelta: LATITUDE_DELTA,
+                        });
+                    }
                 },
             );
         } catch (err) {

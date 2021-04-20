@@ -76,11 +76,8 @@ const ProfileOverviewScreen = ({ navigation }) => {
     const styles = stylesFunction(insets.bottom);
 
     const renderHeader = (
-        <View style={{ display: 'flex', flexDirection: 'row' }}>
-            <Image source={require('../../assets/flano_logo.png')} style={styles.headerImg} />
-            <Text h1 style={styles.headerText}>
-                {'f\u200Blano'}
-            </Text>
+        <View style={{ display: 'flex', flexDirection: 'row', height: '100%' }}>
+            <Image source={require('../../assets/flano_textlogo.png')} style={styles.headerImg} />
         </View>
     );
 
@@ -154,9 +151,8 @@ const stylesFunction = (bottomInset: number) =>
             borderBottomColor: 'gray',
         },
         headerImg: {
-            width: 27,
+            width: 140,
             resizeMode: 'contain',
-            marginRight: 10,
         },
         headerText: {
             ...globalStyles.profileHeaderTitle,
