@@ -27,6 +27,7 @@ import { useTranslation } from 'react-i18next';
 import globalStyles from '../../styles/globalStyles';
 import ImageFooter from '../Details/ImageViewer/ImageFooter';
 import BottomSheetTouchableWithoutFeedback from '../BottomSheetTouchableWithoutFeedback';
+import CachedImage from '../../utils/CachedImage';
 
 const { height: HEIGHT } = Dimensions.get('window');
 
@@ -155,12 +156,11 @@ const DetailCardPanel: FC<IDetailCardPanel> = props => {
                         <>
                             {/* tapping on the image should open the images in fullscreen */}
                             <BottomSheetTouchableWithoutFeedback onPress={() => setImageFullscreen(true)}>
-                                <Image
-                                    // render the first image, all others can be viewed in fullscreen
-                                    source={{ uri: detailData?.images[0].imageSrc }}
-                                    style={styles.image}
-                                    onPress={() => setImageFullscreen(true)}
-                                    PlaceholderContent={<LoadingIndicator />}
+                                <CachedImage
+                                source={{ uri: detailData?.images[0].imageSrc }}
+                                style={styles.image}
+                                onPress={() => setImageFullscreen(true)}
+                                PlaceholderContent={<LoadingIndicator />}
                                 />
                             </BottomSheetTouchableWithoutFeedback>
                             <ButtonBar
